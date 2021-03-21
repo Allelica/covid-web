@@ -1,0 +1,395 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.navbar-inverse {
+  background-color: midnightblue !important;
+  color: #fff !important;
+}
+.navbar-brand {
+  color: #fff !important;
+}
+body {
+  font-size: 16px !important;
+}
+.login {
+  font-size: 18px;
+  display: block;
+  margin: auto;
+}
+.login.user {
+  margin-top: 8px;
+}
+.login.operator {
+  margin-top: 84px;
+}
+button.login {
+  width: 100%;
+}
+.table-striped tbody tr:hover {
+  background-color: #eee !important;
+}
+.logout {
+  display: inline-block;
+  float: right;
+  color: #ddd;
+}
+.logout:hover {
+    color: #fff;
+}
+#search {
+  float: right;
+  font-size: 32px;
+}
+#search-field {
+  width: 250px;
+  padding: 3px;
+}
+#new-patient {
+  font-size: 24px;
+}
+#new-patient:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#new-patient-code {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  padding: 15px;
+}
+.add-user {
+  width: 200px;
+  border: 1px solid #eee;
+  margin: 15px 0;
+  padding: 5px;
+  font-size: 24px;
+}
+#new-patient-send {
+  margin: 15px 0;
+  padding: 5px;
+  font-size: 24px;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+}
+.new_questions {
+  list-style-type: none;
+}
+.add-instance {
+  margin: 3px 0;
+}
+.add-instance:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+i.user-list {
+  font-size: 24px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card.question {
+  width: 30.5%;
+  margin: 0 2% 15px 2%;
+  display: inline-block;
+}
+.card.question.no-right-margin {
+  margin-right: 0px;
+}
+.card.question.no-left-margin {
+  margin-left: 0px;
+}
+h3.card-title {
+  margin: 0;
+}
+.card-subtitle {
+  margin-top: 5px;
+}
+.question label {
+  font-weight: normal;
+  cursor: pointer;
+}
+.question-title {
+  font-weight: bold;
+}
+.option-list {
+  list-style-type: none;
+  width: 150px;
+  border: 1px solid #333;
+}
+.option-list li {
+  display: inline-block;
+
+}
+.list-group {
+  list-style-type: none;
+  margin-top: 10px;
+}
+.list-group-item-custom {
+  margin: 5px 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1) !important;
+  cursor: pointer;
+}
+/*
+.list-group-item-custom:hover {
+  opacity: 1;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22) !important;
+}*/
+.list-group-item-custom input {
+  margin: 5px 10px 0 0 !important;
+  float: right;
+  border: 0;
+}
+.list-group-item-custom input.text {
+  margin: 5px 0 0 0 !important;
+  border: 0;
+  float: none;
+}
+.list-group-item-custom label {
+  font-weight: bold;
+  display: block;
+}
+li.list-group-item-custom {
+  font-weight: bold;
+}
+.list-group-item-custom.checked {
+  border: 2px blue solid;
+}
+
+.user-list.green::before {
+  color: green;
+}
+.card-title i {
+  display: none;
+  float: right;
+  vertical-align: top;
+}
+.question .card-header {
+  min-height: 90px;
+}
+.user-edit,.user-view {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Customize the label (the container)*/
+.question {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.label-check {
+  width: 93%;
+  display: inline-block;
+}
+/* Hide the browser's default checkbox */
+.question input[type="radio"] {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  width: 3.5%;
+  maring-right: 1.5%;
+  display: inline-block;
+  color: #666;
+  vertical-align: top;
+}
+
+.checked .checkmark i::before {
+  color: blue;
+  content: "\f058";
+}
+.button-custom.user-profile  {
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #999;
+  color: #fff !important;
+  padding: 4px 8px;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+}
+.user-container {
+  max-height: 200px;
+}
+.dataTables_length select {
+  height: 30px !important;
+}
+.submit-button {
+  background-color: blue;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  float: right;
+  position: fixed;
+  color: white;
+  margin-top: -58px;
+  right: 110px;
+  border: 0;
+  z-index: 9999;
+}
+table .inside {
+  border-style: solid;
+  border-width: 2px 0 2px 0;
+  border-color: #ccc;
+  text-align: center;
+}
+table th.inside.left-bound, table .left-bound  {
+  border-left: 2px solid #ccc;
+}
+table th.inside.right-bound, table .right-bound {
+  border-right: 2px solid #ccc;
+}
+.dataTables_scroll {
+  margin-bottom: 15px;
+}
+div.dataTables_wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+    .spacer-mobile {
+      margin-top: 20px;
+    }
+    div.logout {
+      margin-top: -45px;
+    }
+    .card.question {
+      width: 84%;
+      margin: 0 5% 15px 5%;
+      display: inline-block;
+    }
+    .submit-button {
+      right: 0px !important;
+    }
+}
+.invalid-feedback {
+  position: absolute;
+}
